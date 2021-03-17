@@ -5,15 +5,21 @@ pipeline{
       stages{
 
          stage('Build'){
+            steps{
             echo "Build success"
+            }
          }
 
          stage('Test'){
-            echo "Test success"
+           steps{
+              echo "Test success"
+           }
          }
 
          stage(deploy){
+           steps{
             echo "Deploy success"
+           }
          }
 
       }
